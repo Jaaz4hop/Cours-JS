@@ -90,7 +90,7 @@ function Mention(array) {
     for(let i = 0; i<array.length ; i++) {
         sum += array[i];
     }
-    let moy = sum/(array.length);
+    let moy = sum/array.length;
     if(moy >= 15) {
         return "Très Bien";
     } else if (moy >= 10) {
@@ -112,8 +112,8 @@ console.log(Mention(notes3));
 
 //Number ou + servent a transformer une chaine de caractère en nombre.
 
-//let letterBox1 = Number(prompt("Entrez un premier nombre svp"));
-//let letterBox2 = Number(prompt("Entrez un deuxième nombre svp"));
+let letterBox1 = Number(prompt("Entrez un premier nombre svp"));
+let letterBox2 = Number(prompt("Entrez un deuxième nombre svp"));
 //let letterBox1 = +prompt("Entrez un premier nombre svp"));
 //let letterBox2 = +prompt("Entrez un deuxième nombre svp"));
 
