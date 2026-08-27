@@ -129,7 +129,7 @@ function ajoutTexte(pseudo, duTexte) {
 
 ajoutTexte("Zeldo", "22 ans, aventurier à ses heures perdues");
 ajoutTexte("Donald", "56 ans, une espèce de gros canard");
-ajoutTexte("James", "35 ans, roliste mais pas que...");
+ajoutTexte("James", "35 ans, roliste mais a un rôle caché...");
 ajoutTexte("Mathieu", "36 ans, gardien de la guilde, mène une double vie");
 ajoutTexte("Mario", "52 ans, plombier et égérie d'une marque de salopette");
 ajoutTexte("Mohamed", "32 ans, énorme swinger");

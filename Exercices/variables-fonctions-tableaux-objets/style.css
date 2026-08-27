@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background: linear-gradient(#000000, #09161d);
+}
+
+header {
+    text-align: center;
+    background-color: #FEF838;
+    font-family: "Blender Pro Book";
+    padding: 10px;
+    height: 100px;
+    align-content: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+div {
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 15px #E10532, -5px -5px 15px #00F0FF;
+    color: #FEF838;
+}
+
+article {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: "Blender Pro Book";
+}
+
+.details {
+    line-height: 1px;
+    width: 290px;
+}
+
+section {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer {
+    height: 100px;
+    background-color: #FEF838;
+    margin-top: 50px;
+}
+
+
+div img {
+    border-bottom: solid 2px rgb(83, 79, 79);
+    padding-bottom: 15px;
+    height: 390px;
+}
+
+@media (max-width: 1290px) {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
