@@ -56,15 +56,20 @@ const kyo = {
 
 const container = document.getElementById("container");
 
-function create(name) {
+const tabData = [james, cyril, mathieu, yanis, olivier, alexis, mohammed, erwann, kyo];
+
+function create(Name) {
     const card = document.createElement("div");
     card.innerHTML = `
-        <img src="${name.photo}" width="250" alt="Photo de ${name.Nom}">
-        <article class="details"><h3>${name.Nom}</h3>
-        <h4>${name.Prénom}</h4>
-        <p><strong>Description :</strong> ${name.Description}</p></article>
+        <img src="${Name.photo}" width="250" alt="Photo de ${Name.Nom}">
+        <article class="details"><h3>${Name.Nom}</h3>
+        <h4>${Name.Prénom}</h4>
+        <p><strong>Description :</strong><br> ${Name.Description}</p></article>
         `;
         container.appendChild(card);
+        // localStorage.setItem("Nom", Name.Nom);
+        // localStorage.setItem("Prénom", Name.Prénom);
+        // localStorage.setItem("Description", Name.Description);
 }
 
 create(james);
@@ -77,6 +82,39 @@ create(mohammed);
 create(erwann);
 create(kyo);
 
+function addToLocalStorage(nom) {
+    localStorage.setItem(`${nom.Prénom}`, Object.values(nom));
+}
+
+// let James = Object.entries(james);
+// let Cyril = Object.entries(cyril);
+// let Mathieu = Object.entries(mathieu);
+// let Yanis = Object.entries(yanis);
+// let Olivier = Object.entries(olivier);
+// let Alexis = Object.entries(alexis);
+// let Mohammed = Object.entries(mohammed);
+// let Erwann = Object.entries(erwann);
+// let Kyo = Object.entries(kyo);
+
+addToLocalStorage(james);
+addToLocalStorage(cyril);
+addToLocalStorage(mathieu);
+addToLocalStorage(yanis);
+addToLocalStorage(olivier);
+addToLocalStorage(alexis);
+addToLocalStorage(mohammed);
+addToLocalStorage(erwann);
+addToLocalStorage(kyo);
+
+const button = document.querySelector("button");
+
+// const absents = container.querySelectorAll("div");
+
+button.addEventListener("click", function() {
+    localStorage.removeItem("Erwann");
+    localStorage.removeItem("Kyo");
+    // container.removeChild(absents);
+})
 
 
 

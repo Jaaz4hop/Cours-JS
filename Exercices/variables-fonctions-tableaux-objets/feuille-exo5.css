@@ -1,0 +1,27 @@
+* {
+    transition: 1s;
+}
+
+body {
+    min-height: 5000px;
+}
+
+h1 {
+    text-align: center;
+    margin: 120px;
+    opacity: 0;
+}
+
+.boxBar {
+    width: 100%;
+    border: 5px solid royalblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bar {
+    height: 20px;
+    background-color: royalblue;
+    width: 0%;
+}

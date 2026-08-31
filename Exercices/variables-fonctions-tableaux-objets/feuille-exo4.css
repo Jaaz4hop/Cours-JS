@@ -1,0 +1,12 @@
+.maCouleur {
+    color: crimson;
+    border: 2px solid yellow;
+    box-shadow: 10px 10px 1px red;
+}
+
+.superChange {
+    background-color: linear-gradient(to left, red, blue);
+    font-size: larger;
+    font-weight: bolder;
+    text-transform: capitalize;
+}

@@ -1,4 +1,4 @@
-// Exo 1 cartes variables
+// ----------------Exo 1 cartes variables
 
 let carteA = "Tortank";
 let carteB = "Dracaufeu";
@@ -12,7 +12,7 @@ carteB = save;
 
 console.log(carteA, carteB);
 
-// Exo 2 calculs et variables
+// -----------------Exo 2 calculs et variables
 
 let a = 5;
 a += 10;
@@ -37,7 +37,7 @@ a += b;
 
 console.log(a);
 
-// Exo 3 concaténation
+// ------------------Exo 3 concaténation
 
 let name1 = "Robert";
 let age = "57 ans";
@@ -46,14 +46,14 @@ let welcomingWords = "Bonjour " + name1 + " tu as " + age + " aujourd'hui, c'est
 
 console.log(welcomingWords);
 
-// Exo 4 caractères
+// -------------------Exo 4 caractères
 
 let name2 = "Balthazar";
 
 console.log(name2.length);
 console.log(name2[name2.length-1]);
 
-// Exo 5 caractères-initiales
+// ----------------Exo 5 caractères-initiales
 
 let name3 = "Tirelot";
 let firstName = "Marion";
@@ -62,7 +62,7 @@ let tab = [name3, firstName, initials];
 
 console.log(tab);
 
-// Exo 6 fonctions
+// -----------------Exo 6 fonctions
 
 let noteA = 17;
 let noteB = 8;
@@ -77,13 +77,13 @@ console.log(moy);
 console.log(moyenne(17, 8));
 console.log(moyenne(noteA, noteB));
 
-// Exo 7 Math.random
+// ------------------Exo 7 Math.random
 
 let randomNumber = Math.floor(Math.random()*101);
 
 console.log(randomNumber);
 
-// Exo 8 if else et booléens
+// -------------------Exo 8 if else et booléens
 
 function Mention(array) {
     let sum = 0;
@@ -108,7 +108,7 @@ console.log(Mention(notes));
 console.log(Mention(notes2));
 console.log(Mention(notes3));
 
-// Exo 9 Prompt
+// -------------------Exo 9 Prompt
 
 //Number ou + servent a transformer une chaine de caractère en nombre.
 
@@ -141,7 +141,7 @@ if (comp1 > comp2) {
 }
 */
 
-// Exo 10 objets
+// --------------------------Exo 10 objets
 
 let DoctorWho = {
     nom: "Doctor Who",

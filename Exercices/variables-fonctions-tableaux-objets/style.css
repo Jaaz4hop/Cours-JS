@@ -3,6 +3,12 @@ body {
     background: linear-gradient(#000000, #09161d);
 }
 
+button {
+    width: 600px;
+    height: 200px;
+    font-size: 3em;
+}
+
 header {
     text-align: center;
     background-color: #FEF838;
@@ -17,7 +23,7 @@ h1 {
 }
 
 div {
-    width: 300px;
+    width: 400px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -37,7 +43,7 @@ article {
 
 .details {
     line-height: 1px;
-    width: 290px;
+    font-size: 2em;
 }
 
 section {

@@ -1,4 +1,4 @@
-/*Exercice 11 : Calculer une moyenne + For
+/*---------------Exercice 11 : Calculer une moyenne + For
 Créer une fonction moyenne qui prend en paramètre un array de plusieurs notes et retourne la moyenne calculée.
 Dans cette fonction, on crée une boucle pour faciliter le calcul de la moyenne.
 Afficher en console un appel à la fonction moyenne en lui passant un tableau de plusieurs notes.*/
@@ -34,7 +34,7 @@ let text = `La Marque de la voiture est ${voiture.marque ? voiture.marque : "Non
 
 console.log(text);
 
-/*Exo 12 Températures + For + condition
+/*-------------------------Exo 12 Températures + For + condition
 Créer un programme qui prend en paramètre un array de plusieurs températures.
 Créer une boucle pour parcourir toutes les températures.
 
@@ -60,7 +60,7 @@ function tempInfo(tab) {
 
 tempInfo([12,15,22,27,31,29,25,20,15,13,9,8,7]);
 
-// Petit test destructuring
+// ----------------------Petit test destructuring
 
 const {model, marque, vitesse, température = 90} = voiture;
 console.log(vitesse, marque, température);
@@ -77,7 +77,7 @@ function melange(tab) {
 
 console.log(melange([1,2,3,4,5,6]));
 
-// Spread Opérator
+// ---------------------------Spread Opérator
 
 let groupe1=["Marion", "Victor"];
 let groupe2=["Margot", "Moineaux"];
@@ -91,7 +91,7 @@ console.log(liste);
 console.log(liste2);
 
 
-// DOM
+// ---------------------------------DOM
 
 const titre = document.getElementsByTagName("h1");
 const paragraphe = document.getElementsByTagName("p");
@@ -99,7 +99,7 @@ const olist = document.getElementsByTagName("ol")
 
 
 
-// DOM Query selector()
+// ---------------------------DOM Query selector()
 
 const titre2 = document.querySelector("h1");
 const p1 = document.querySelector("p");
@@ -111,14 +111,14 @@ console.log(p1);
 console.log(p2);
 console.log(paragraph2);
 
-//DOM insertBefore()
+//-----------------------DOM insertBefore()
 
 const titre3 = document.getElementById("titre");
 const txt = document.body.getElementsByTagName("p");
 
 document.body.insertBefore(txt[0], titre3);
 
-// DOM createElement()
+// -----------------------DOM createElement()
 
 function ajoutTexte(pseudo, duTexte) {
     const newTxt = document.createElement("p");
