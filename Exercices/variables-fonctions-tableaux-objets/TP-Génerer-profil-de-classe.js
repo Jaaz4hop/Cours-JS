@@ -108,12 +108,13 @@ addToLocalStorage(kyo);
 
 const button = document.querySelector("button");
 
-// const absents = container.querySelectorAll("div");
+const cards = Array.from(document.querySelectorAll("div"));
+const absents = cards.slice(-2);
 
 button.addEventListener("click", function() {
     localStorage.removeItem("Erwann");
     localStorage.removeItem("Kyo");
-    // container.removeChild(absents);
+    absents.forEach(div => div.remove());
 })
 
 
