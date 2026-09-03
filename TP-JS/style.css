@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+#showroomContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 80px;
+}
+
+#colorContainer {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+#colorPicker {
+    display: flex;
+    justify-content: space-between;
+}
+
+#blackColor {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(56, 51, 51);
+    cursor: pointer;
+}
+
+#yellowColor {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(214, 164, 26);
+    cursor: pointer;
+}
+
+#cyanColor {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(14, 133, 133);
+    cursor: pointer;
+}
+
+#rightArrow {
+    cursor: pointer;
+}
+
+#leftArrow {
+    cursor: pointer;
+}
+
+
+/*Ajout de css pour bien positionner les cheveux sur le visage. Cette solution est pratique car moins de JS à écrire.*/
+
+#faceContainer {
+  position: relative; /* Devient le repère pour les enfants */
+  display: inline-block; /* S'adapte à la taille de l'image */
+}
+
+#faceImg {
+    display: block;
+}
+
+/* Style appliqué à la coiffure ajoutée */
+.hair-style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* S'aligne parfaitement sur l'image de tête */
+}
